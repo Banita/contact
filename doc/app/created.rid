@@ -1,0 +1,9 @@
+Tue, 29 Oct 2013 23:25:41 +0530
+doc/README_FOR_APP	Thu, 22 Aug 2013 23:35:10 +0530
+app/controllers/application_controller.rb	Thu, 22 Aug 2013 23:35:10 +0530
+app/controllers/person_controller.rb	Tue, 29 Oct 2013 00:06:10 +0530
+app/helpers/application_helper.rb	Thu, 22 Aug 2013 23:35:10 +0530
+app/helpers/person_helper.rb	Thu, 29 Aug 2013 00:31:51 +0530
+app/models/organization.rb	Tue, 29 Oct 2013 22:41:44 +0530
+app/models/person.rb	Thu, 24 Oct 2013 13:17:52 +0530
+app/models/user.rb	Tue, 29 Oct 2013 22:42:25 +0530

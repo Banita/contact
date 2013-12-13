@@ -1,0 +1,46 @@
+
+<!--
+<form name="input" action="create" >
+FirstName: <input type="text" name="first_name">
+LastName: <input type="text" name="last_name">
+<input type="submit" value="Submit">
+</form> -->
+
+<%= form_for @person ,:url=>{:action=>'create'},:html=>{:class=>"form-horizontal",:multipart => true} do |f| %>
+
+<p>
+    <%= f.file_field :photo %> or image URL
+ 
+    <%= f.text_field :photo %>
+</p>
+
+<p>
+   FirstName:<br />
+   <%= f.text_field :first_name %>
+ </p>
+
+ <p>
+   LastName:<br />
+   <%= f.text_field :last_name %>
+ </p>
+
+ <p>
+   Email:<br />
+   <%= f.text_field :email %>
+ </p>
+
+ <p>
+   Mobile:<br />
+   <%= f.text_field :mobile %>
+ </p>
+
+ <p>
+   OfficeNumber:<br />
+   <%= f.text_field :office_phone %>
+ </p>
+
+<%= f.submit %>
+<%end%>
+
+
+

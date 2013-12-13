@@ -1,0 +1,18 @@
+/ = image_tag @company.photo_url(:thumb)
+/=image_tag photo_person_url
+%div{style: "width :100px; height :150px;"}
+  = image_tag @company.photo
+%p
+  Name:
+  %br/
+  = @company.name
+%p
+  Email:
+  %br/
+  = @company.email
+%p
+  Office_no:
+  %br/
+  = @company.office_no
+
+/ = link_to 'edit',:action=>'edit',:id=>@person.id

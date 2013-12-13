@@ -1,0 +1,22 @@
+development:
+  host: localhost
+  adapter: mysql2
+  database: contact_dev
+  pool: 25
+  username: contact
+  password: password
+
+test:
+  host: localhost
+  adapter: mysql2
+  database: contact_test
+  username: contact
+  password: password
+
+production:
+  host: localhost
+  adapter: postgresql
+  database: contact_prod
+  pool: 25
+  username: contact
+  password: password

@@ -1,0 +1,47 @@
+<html>
+<h1>Listing </h1>
+<head>
+<style type="text/css">
+  .span4{padding:4px 4px 15px 4px;border-style:solid;border-width:1px;border-color:transparent;}
+  .email{color:#00ff00;}
+  .span1{width :100px; height :150px;}
+  </style>
+</head>
+<body>
+  <div class="row">
+  <% @person.each do |i|%>
+  <div class="span4">
+    <div class="span1">
+      <!--<%=image_tag(#{}"person.png",:size => "80x80")%>-->
+            <%=image_tag(@person.photo_url)%>
+    </div>
+
+    <div class="span2">
+        
+          <div >
+            <b><%=i.first_name%> <%=i.last_name%></b>
+          </div>
+          <div class="email">
+            Email:<%= i.email%>
+          </div>
+          <div >
+            Mobile:<%=i.mobile%>
+          </div>
+          <div >
+            OfficeNumber:<%=i.office_phone%>
+          </div>
+           <div >
+            
+          </div>
+      </div>
+  </div>
+
+<% end %>
+</div>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,21 @@
+!!!
+%html
+  %body
+    %h1 Listing
+    :css
+      .span4{padding:4px 4px 15px 4px;border-style:solid;border-width:1px;border-color:transparent;}
+      .email{color:#00ff00;}
+    .row
+      - @companies.each do |i|
+        .span4
+          .span1
+            = image_tag("person.png",:size => "80x80")
+          .span2
+            / %div
+            %b
+              = i.name
+            .email
+              Email:#{i.email}
+            / %div
+            OfficeNumber:#{i.office_no}
+            / %div

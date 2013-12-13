@@ -1,0 +1,32 @@
+<%@person.photo %>
+
+<div  >
+<%=image_tag(@person.photo_url)%>
+</div>
+
+<p>
+   FirstName:<br />
+   <%= @person.first_name %>
+ </p>
+
+ <p>
+   LastName:<br />
+   <%= @person.last_name %>
+ </p>
+
+ <p>
+   Email:<br />
+   <%= @person.email %>
+ </p>
+
+ <p>
+   Mobile:<br />
+   <%= @person.mobile %>
+ </p>
+
+ <p>
+   OfficeNumber:<br />
+   <%= @person.office_phone %>
+ </p>
+<%= link_to 'edit',:action=>'edit',:id=>@person.id %>
+

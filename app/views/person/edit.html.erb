@@ -1,0 +1,31 @@
+<%= form_for @person,:url=>{:action=>'update' ,:id=>@person.id} do |i|  %>
+
+<p>
+   FirstName:<br />
+   <%= i.text_field :first_name %>
+ </p>
+
+ <p>
+   LastName:<br />
+   <%= i.text_field :last_name %>
+ </p>
+
+ <p>
+   Email:<br />
+   <%= i.text_field :email %>
+ </p>
+
+ <p>
+   Mobile:<br />
+   <%= i.text_field :mobile %>
+ </p>
+
+ <p>
+   OfficeNumber:<br />
+   <%= i.text_field :office_phone %>
+ </p>
+
+
+<%= i.submit 'submit'%>
+
+<%end%>
